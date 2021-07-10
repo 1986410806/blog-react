@@ -54,6 +54,7 @@ const config = configFactory('production');
 // We require that you explicitly set browsers and do not fall back to
 // browserslist defaults.
 const { checkBrowsers } = require('react-dev-utils/browsersHelper');
+
 checkBrowsers(paths.appPath, isInteractive)
   .then(() => {
     // First, read the current file sizes in build directory.
@@ -109,12 +110,14 @@ checkBrowsers(paths.appPath, isInteractive)
         buildFolder,
         useYarn
       );
+      process.exit(1);
     },
     err => {
       console.log(chalk.red('Failed to compile.\n'));
       printBuildError(err);
       process.exit(1);
     }
+
   )
   .catch(err => {
     if (err && err.message) {
