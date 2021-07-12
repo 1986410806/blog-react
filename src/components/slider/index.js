@@ -1,7 +1,7 @@
 import './index.less';
 import logo from '../../assets/userLogo.jpeg';
-import BiaoChenXuYing from '../../assets/BiaoChenXuYing.png';
-import YingHeZaHuoPu from '../../assets/YingHeZaHuoPu.png';
+// import BiaoChenXuYing from '../../assets/BiaoChenXuYing.png';
+// import YingHeZaHuoPu from '../../assets/YingHeZaHuoPu.png';
 import React, { Component } from 'react';
 import { Avatar, message } from 'antd';
 import { Link } from 'react-router-dom';
@@ -110,7 +110,7 @@ class SliderRight extends Component {
     return (
       <div className="right">
         <Avatar className="right-logo" src={logo} size={130} icon="user" />
-        <div className="title">BiaoChenXuYing</div>
+        <div className="title">王富贵</div>
         <div className="right-content">
           {/* <div className="item">
 						<div className="num">123</div>粉丝<Icon type="right" theme="outlined" />
@@ -130,7 +130,7 @@ class SliderRight extends Component {
           <div className="title">标签云</div>
           {list}
         </div>
-        <div className="introduce">
+       {/* <div className="introduce">
           <div className="title">技术以内的 BB</div>
           <div className="content">
             <img style={{'width':'100%'}} src={BiaoChenXuYing} alt="全栈修炼" />
@@ -141,7 +141,7 @@ class SliderRight extends Component {
           <div className="content">
             <img style={{'width':'100%'}} src={YingHeZaHuoPu} alt="硬核杂货铺" />
           </div>
-        </div>
+        </div>*/}
       </div>
     );
   }
