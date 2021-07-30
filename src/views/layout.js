@@ -54,7 +54,8 @@ class Layouts extends Component {
               </Content>
             </Layout>
             <Footer style={{ textAlign: 'center', background: '#fff' }}>
-              全栈修炼 ©2018 Created by BiaoChenXuYing
+              王富贵 ©2021 Created by WangGuGui-BLOG <br />
+              京ICP备2021024006号
             </Footer>
             <BackTop />
           </div>
