@@ -47,13 +47,10 @@ class Nav extends Component {
       code: '',
       isLoading: false,
     };
-    this.menuClick = this.menuClick.bind(this);
     this.showLoginModal = this.showLoginModal.bind(this);
     this.showRegisterModal = this.showRegisterModal.bind(this);
     this.handleLoginCancel = this.handleLoginCancel.bind(this);
     this.handleRegisterCancel = this.handleRegisterCancel.bind(this);
-    this.initMenu = this.initMenu.bind(this);
-    this.handleMenu = this.handleMenu.bind(this);
     this.handleLogout = this.handleLogout.bind(this);
     this.showDrawer = this.showDrawer.bind(this);
     this.onClose = this.onClose.bind(this);
@@ -94,7 +91,7 @@ class Nav extends Component {
     });
   };
 
-  initMenu(name) {
+  initMenu = (name) => {
     let key = '9';
     let navTitle = '';
     if (name === '/') {
@@ -219,7 +216,7 @@ class Nav extends Component {
       register: false,
     });
   }
-  menuClick({ key }) {
+  menuClick = ({ key }) => {
     this.setState({
       nav: key,
     });
@@ -316,12 +313,7 @@ class Nav extends Component {
                       文章
                     </Link>
                   </Menu.Item>
-                  <Menu.Item key="2">
-                    <Link to="/hot">
-                      <Icon type="fire" theme="outlined" />
-                      热门
-                    </Link>
-                  </Menu.Item>
+
                   <Menu.Item key="8">
                     <Link to="/archive">
                       <Icon type="project" theme="outlined" />
@@ -334,12 +326,18 @@ class Nav extends Component {
                       项目
                     </Link>
                   </Menu.Item>
-                  <Menu.Item key="3">
-                    <Link to="/timeLine">
-                      <Icon type="hourglass" theme="outlined" />
-                      历程
+                  <Menu.Item key="10">
+                    <Link to="#">
+                      <Icon type="read" theme="outlined" />
+                      文档
                     </Link>
                   </Menu.Item>
+                  {/*<Menu.Item key="3">*/}
+                  {/*  <Link to="/timeLine">*/}
+                  {/*    <Icon type="hourglass" theme="outlined" />*/}
+                  {/*    历程*/}
+                  {/*  </Link>*/}
+                  {/*</Menu.Item>*/}
                   <Menu.Item key="4">
                     <Link to="/message">
                       <Icon type="message" theme="outlined" />
