@@ -302,24 +302,24 @@ class Nav extends Component {
                   style={{ lineHeight: '64px', borderBottom: 'none' }}
                 >
                   <Menu.Item key="9">
-                    <Link to="/">
+                    <Link to="/articles">
                       <Icon type="home" theme="outlined" />
                       首页
                     </Link>
                   </Menu.Item>
-                  <Menu.Item key="1">
-                    <Link to="/articles">
-                      <Icon type="ordered-list" theme="outlined" />
-                      文章
-                    </Link>
-                  </Menu.Item>
+                  {/*<Menu.Item key="1">*/}
+                  {/*  <Link to="">*/}
+                  {/*    <Icon type="ordered-list" theme="outlined" />*/}
+                  {/*    文章*/}
+                  {/*  </Link>*/}
+                  {/*</Menu.Item>*/}
 
-                  <Menu.Item key="8">
-                    <Link to="/archive">
-                      <Icon type="project" theme="outlined" />
-                      归档
-                    </Link>
-                  </Menu.Item>
+                  {/*<Menu.Item key="8">*/}
+                  {/*  <Link to="/archive">*/}
+                  {/*    <Icon type="project" theme="outlined" />*/}
+                  {/*    归档*/}
+                  {/*  </Link>*/}
+                  {/*</Menu.Item>*/}
                   <Menu.Item key="7">
                     <Link to="/project">
                       <Icon type="database" theme="outlined" />
@@ -327,10 +327,10 @@ class Nav extends Component {
                     </Link>
                   </Menu.Item>
                   <Menu.Item key="10">
-                    <Link to="#">
+                    <a href="http://doc.wfg6.cc" target="_blank">
                       <Icon type="read" theme="outlined" />
                       文档
-                    </Link>
+                    </a>
                   </Menu.Item>
                   {/*<Menu.Item key="3">*/}
                   {/*  <Link to="/timeLine">*/}

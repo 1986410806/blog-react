@@ -1270,7 +1270,7 @@ class Index extends Component {
           <div className="home-body">
             <div className="list">
               <Link className="link" to={`/articles`}>
-                文章
+                文章1
               </Link>
               <Link className="link" to={`/project`}>
                 项目

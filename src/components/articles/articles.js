@@ -127,8 +127,7 @@ class Articles extends Component {
     this.setState({
       isLoading: true,
     });
-    https
-      .get(
+    https.get(
         urls.getArticleList,
         {
           params: {
