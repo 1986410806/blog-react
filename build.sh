@@ -1,5 +1,5 @@
 #!/bin/bash
 
-docker build -t zhaohuinan/blog .
+docker build -t zhaohuinan/blog-react .
 
-docker push zhaohuinan/blog
+docker push zhaohuinan/blog-react
